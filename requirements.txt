@@ -1,0 +1,3 @@
+# Build-time only: produces the static site. Nothing here runs in the browser.
+ontoink==0.7.9
+mkdocs==1.6.1

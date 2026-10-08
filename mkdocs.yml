@@ -1,0 +1,26 @@
+site_name: Fieldwork ontology
+site_description: A reading view of the Fieldwork vocabulary, its SHACL shapes and its competency questions.
+site_url: https://digital-twin-ph.github.io/fieldwork-ontology/
+repo_url: https://github.com/digital-twin-ph/fieldwork
+docs_dir: docs
+plugins:
+  - search
+  # report writes site/ontoink-report.json and badges on every build. strict_quality is off:
+  # the quality score is a heuristic, and the gates this site enforces are the competency
+  # questions, which fail the build under --strict.
+  - ontoink:
+      report: true
+      strict_quality: false
+markdown_extensions:
+  - tables
+  - admonition
+  - pymdownx.superfences:
+      preserve_tabs: true
+nav:
+  - Overview: index.md
+  - Vocabulary: vocabulary.md
+  - Runtime evidence: runtime.md
+  - Assets and jurisdictions: assets.md
+  - Discovery and processing: processing.md
+  - Shapes and examples: shapes.md
+  - Competency questions: competency-questions.md

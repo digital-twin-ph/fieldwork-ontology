@@ -1,0 +1,5 @@
+site/
+.venv/
+.fieldwork/
+docs/ontology/
+__pycache__/
